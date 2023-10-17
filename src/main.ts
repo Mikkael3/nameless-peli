@@ -9,12 +9,12 @@ class Peli extends Phaser.Scene {
   }
 
   create() {
-    this.points = this.add.text(600, 50, "Pisteet: " + this.pisteet);
+    this.points = this.add.text(300, 50, "Pisteet: " + this.pisteet);
     let speed = 100;
 
     const logo = this.physics.add.image(200, 50, "logo");
-    logo.displayHeight = 64;
-    logo.displayWidth = 64;
+    logo.displayHeight = 32;
+    logo.displayWidth = 32;
     logo.setVelocity(speed, speed * 2);
     logo.setBounce(1, 1);
     logo.setCollideWorldBounds(true);
@@ -22,8 +22,8 @@ class Peli extends Phaser.Scene {
 
     const enemy = this.physics.add.image(400, 100, "enemy");
     enemy.setInteractive();
-    enemy.displayHeight = 64;
-    enemy.displayWidth = 64;
+    enemy.displayHeight = 32;
+    enemy.displayWidth = 32;
     enemy.setVelocity(speed, speed * 2);
     enemy.setBounce(1, 1);
     enemy.setCollideWorldBounds(true);
