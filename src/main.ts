@@ -46,8 +46,8 @@ class Peli extends Phaser.Scene {
 
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: 400,
+  height: 300,
   scene: Peli,
   physics: {
     default: "arcade",
