@@ -38,7 +38,7 @@ class Peli extends Phaser.Scene {
         this.pisteet++;
         if (this.points) this.points.text = "Pisteet: " + this.pisteet;
       }
-      enemy.setVelocity(speed, speed * 2);
+      enemy.setVelocity(-speed, -speed * 2);
       logo.setVelocity(speed, speed * 2);
     });
   }
@@ -46,8 +46,8 @@ class Peli extends Phaser.Scene {
 
 const config = {
   type: Phaser.AUTO,
-  width: 400,
-  height: 300,
+  width: 800,
+  height: 600,
   scene: Peli,
   physics: {
     default: "arcade",
